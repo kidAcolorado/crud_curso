@@ -79,8 +79,7 @@ public class CursoRestController {
      * @param curso El curso que se va a dar de alta.
      * @return Una respuesta HTTP con una lista actualizada de cursos en formato JSON.
      */
-    @PostMapping(value = "curso", consumes = MediaType.APPLICATION_JSON_VALUE)
-    @ResponseBody
+    @PostMapping(value = "curso", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> darDeAltaCurso(@RequestBody Curso curso) {
         // Llama al servicio para dar de alta el curso y obtener la lista actualizada
         List<Curso> listaCursos = cursoServiceImpl.darDeAltaCurso(curso);
@@ -118,7 +117,7 @@ public class CursoRestController {
      * @param codigo El código del curso que se va a eliminar.
      * @return Una respuesta HTTP con una lista actualizada de cursos en formato JSON si la eliminación se completa con éxito, o un mensaje de error y un estado HTTP 404 si el curso no se encuentra.
      */
-    @DeleteMapping(value = "curso/{codigo}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping(value = "curso/{codigo}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> deleteCursoAndShowLista(@PathVariable("codigo") String codigo){
         
         try {
