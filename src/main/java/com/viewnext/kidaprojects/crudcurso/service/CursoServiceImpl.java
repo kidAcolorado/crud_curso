@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.viewnext.kidaprojects.crudcurso.exception.CursoNotFoundException;
 import com.viewnext.kidaprojects.crudcurso.model.Curso;
 
@@ -25,6 +27,7 @@ import com.viewnext.kidaprojects.crudcurso.model.Curso;
  * @version 1.0
  * @since 26 de Septiembre de 2023
  */
+@Service
 public class CursoServiceImpl implements CursoService{
 
 	private List<Curso> listaCursos;

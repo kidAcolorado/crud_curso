@@ -35,7 +35,7 @@ Puedes utilizar esta aplicación para realizar operaciones CRUD en cursos. Aquí
 - Método: POST
 - URL: `http://localhost:8080/curso`
 - Cuerpo de la solicitud (JSON):
-  ```json
+ ```json
   {
     "codigo": "C021",
     "nombre": "Introducción a la Programación Avanzada",
