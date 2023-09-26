@@ -1,7 +1,20 @@
 package com.viewnext.kidaprojects.crudcurso.model;
 
 import java.util.Objects;
-
+/**
+ * La clase {@code Curso} representa un curso con la siguiente información:
+ * - Código del curso.
+ * - Nombre del curso.
+ * - Número de horas de duración del curso.
+ * - Precio del curso.
+ * 
+ * <p>
+ * El autor de esta clase es Víctor Colorado "Kid A".
+ * </p>
+ *
+ * @version 1.0
+ * @since 26 de Septiembre de 2023
+ */
 public class Curso {
 
 	private String codigo;

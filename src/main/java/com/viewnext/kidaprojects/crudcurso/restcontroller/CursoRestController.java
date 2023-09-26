@@ -23,6 +23,19 @@ import com.viewnext.kidaprojects.crudcurso.service.CursoServiceImpl;
 
 /**
  * Controlador REST para la gestión de cursos.
+ * 
+ * <p>
+ * Esta clase define los puntos de entrada de la API para realizar operaciones CRUD en cursos,
+ * como obtener todos los cursos, obtener un curso por su código, dar de alta un nuevo curso,
+ * actualizar las horas de un curso y eliminar un curso por su código.
+ * </p>
+ * 
+ * <p>
+ * El autor de esta clase es Víctor Colorado "Kid A".
+ * </p>
+ *
+ * @version 1.0
+ * @since 26 de Septiembre de 2023
  */
 @RestController
 public class CursoRestController {
