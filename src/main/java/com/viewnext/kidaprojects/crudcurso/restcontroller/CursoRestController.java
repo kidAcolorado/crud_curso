@@ -49,9 +49,9 @@ public class CursoRestController {
 	 * @return Una lista de cursos en formato JSON.
 	 */
 	@GetMapping(value = "cursos", produces = MediaType.APPLICATION_JSON_VALUE)
-	public List<Curso> mostrarCursos() {
-		// Llama al servicio para obtener la lista de cursos y la devuelve como JSON
-		return cursoServiceImpl.getAllCursos();
+	public  ResponseEntity<?> mostrarCursos() {
+		List<Curso> listaCursos = cursoServiceImpl.getAllCursos();
+		return ResponseEntity.ok(listaCursos);
 	}
 
 	/**
